@@ -20,7 +20,7 @@ This tool automates that process based on data provided by HueForge and automati
    - Default M600 command: path_to_python\python.exe path_to_file\autopause.py
    - Custom command (Klipper): path_to_python\python.exe path_to_file\autopause.py PAUSE
 
-![installation](scripts.png)
+![installation](docs/scripts.png)
 
 ## Usage
 
@@ -28,7 +28,7 @@ This tool automates that process based on data provided by HueForge and automati
 1. Add the color changes in the slicer’s Print Settings → Notes section (Prusa).
 1. Export or directly print your model — the script will be run by the slicer and automatically insert pause commands where needed.
 
-![usage](notes.png)
+![usage](docs/notes.png)
 
 ### Error situations
 
