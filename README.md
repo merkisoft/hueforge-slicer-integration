@@ -17,34 +17,23 @@ Tested with PrusaSlicer — should also work with OrcaSlicer and other slicers t
 
 ## Installation
 
-Download or clone this repository.
-
-Place the autopause.py script in a convenient folder.
-
-In your slicer, open Printer Settings → Output options → Post-processing scripts.
-
-Add the path to your Python executable and the script file, for example:
-
-Default M600 command: path_to_python\python.exe path_to_file\autopause.py
-
-Custom command (Klipper): path_to_python\python.exe path_to_file\autopause.py PAUSE
+1. Download or clone this repository.
+1.  Place the autopause.py script in a convenient folder.
+1. In your slicer, open Printer Settings → Output options → Post-processing scripts. Add the path to your Python executable and the script file, for example:
+   - Default M600 command: path_to_python\python.exe path_to_file\autopause.py
+   - Custom command (Klipper): path_to_python\python.exe path_to_file\autopause.py PAUSE
 
 ## Usage
 
-In the folder where you saved the project.hfp file, you will find project_describe.txt (where project is the name of your file). Open this text file and copy the section titled Swap Instructions:.
-
-Add the color changes in the slicer’s Print Settings → Notes section (Prusa).
-
-Export or directly print your model — the script will be run by the slicer and automatically insert pause commands where needed.
+1. In the folder where you saved the project.hfp file, you will find project_describe.txt (where project is the name of your file). Open this text file and copy the section titled Swap Instructions:.
+1. Add the color changes in the slicer’s Print Settings → Notes section (Prusa).
+1. Export or directly print your model — the script will be run by the slicer and automatically insert pause commands where needed.
 
 ### Error situations
 
 The script will only work if:
-
-You set the layer heights correctly — it must be able to find the corresponding layers.
-
-You add the full section Swap Instructions: (including this title).
-
+- You set the layer heights correctly — it must be able to find the corresponding layers.
+- You add the full section Swap Instructions: (including this title).
 Any errors will be shown in the script console for 60 seconds.
 
 ## Credits
