@@ -9,11 +9,9 @@ This tool automates that process based on data provided by HueForge and automati
 
 ## Features
 
-Automatically detects color-change layers in G-code
-
-Inserts pause commands such as M600 or custom commands like PAUSE
-
-Tested with PrusaSlicer — should also work with OrcaSlicer and other slicers that support post-processing scripts
+- Automatically handles color-change layers in G-code 
+- Inserts pause commands such as M600 or custom commands like PAUSE
+- Tested with PrusaSlicer — should also work with OrcaSlicer and other slicers that support post-processing scripts
 
 ## Installation
 
@@ -23,11 +21,15 @@ Tested with PrusaSlicer — should also work with OrcaSlicer and other slicers t
    - Default M600 command: path_to_python\python.exe path_to_file\autopause.py
    - Custom command (Klipper): path_to_python\python.exe path_to_file\autopause.py PAUSE
 
+![installation](scripts.png)
+
 ## Usage
 
 1. In the folder where you saved the project.hfp file, you will find project_describe.txt (where project is the name of your file). Open this text file and copy the section titled Swap Instructions:.
 1. Add the color changes in the slicer’s Print Settings → Notes section (Prusa).
 1. Export or directly print your model — the script will be run by the slicer and automatically insert pause commands where needed.
+
+![usage](notes.png)
 
 ### Error situations
 
