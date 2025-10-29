@@ -15,7 +15,7 @@ This tool automates that process based on data provided by HueForge and automati
 
 ## Installation
 
-1. Download [autopause.py](https://github.com/merkisoft/hueforge-slicer-integration/raw/refs/heads/main/autopause.py) and place the script in a convenient folder.
+1. Download [autopause.py](https://github.com/merkisoft/hueforge-slicer-integration/raw/refs/heads/main/autopause.py) (right click, Save link as ...) and place the script in a convenient folder.
 1. In your slicer, open Printer Settings → Output options → Post-processing scripts. Add the path to your Python executable and the script file, for example:
    - Default M600 command: path_to_python\python.exe path_to_file\autopause.py
    - Custom command (Klipper): path_to_python\python.exe path_to_file\autopause.py PAUSE
