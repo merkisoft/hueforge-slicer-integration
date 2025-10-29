@@ -36,6 +36,7 @@ This tool automates that process based on data provided by HueForge and automati
 The script will only work if:
 - You set the layer heights correctly — it must be able to find the corresponding layers.
 - You add the full section Swap Instructions: (including this title).
+
 Any errors will be shown in the script console for 60 seconds.
 
 ## Credits
